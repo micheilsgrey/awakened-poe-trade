@@ -116,7 +116,7 @@ export async function startServer (
   })
 
   let port = (process.env.VITE_DEV_SERVER_URL) ? 8584 : 0
-  let host = '127.0.0.1'
+  let host = 'localhost'
   // --listen=[host][:port]
   const listenOpt = process.argv.find(arg => arg.startsWith('--listen'))
   if (listenOpt) {
